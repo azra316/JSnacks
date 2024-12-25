@@ -383,7 +383,21 @@ GetDays(9);
 GetDays('q');
 GetDays(2);
 //5.Use a nested if-else statement to determine whether a number is between 10 and 50 and is even or odd.
-
+let EvenOddNum = (num)=>{
+  if(num>=10 && num<= 50){
+    if(num %2 ===0){
+      console.log(`${num} is even and between 10 and 50`);
+    }else{
+      console.log(`${num} is odd and between 10 and 50`)
+    }
+  }else{
+    console.log(`${num} is not between 10 and 50`)
+  }
+}
+EvenOddNum(35);
+EvenOddNum(12);
+EvenOddNum(66);
+EvenOddNum(56);
 //6.Write a function that takes a number and returns "even" if the number is even, "odd" if it's odd, and "zero" if it's 0.
 //7. Write a switch case to categorize a given fruit (e.g., "apple", "banana", "orange") and return a message for each.
 //8.Implement an if-else statement that checks if a character is a vowel or consonant.
