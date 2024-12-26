@@ -399,7 +399,42 @@ EvenOddNum(12);
 EvenOddNum(66);
 EvenOddNum(56);
 //6.Write a function that takes a number and returns "even" if the number is even, "odd" if it's odd, and "zero" if it's 0.
+let CheckEvenOddNum = (num)=>{
+  if(num === 0){
+    return `${num} is zero`;
+  }else if(num % 2 === 0){
+    return `${num} is even`;
+  }else{
+    return `${num} is odd`
+  }
+}
+console.log(CheckEvenOddNum(12));
+console.log(CheckEvenOddNum(23));
+console.log(CheckEvenOddNum(0));
 //7. Write a switch case to categorize a given fruit (e.g., "apple", "banana", "orange") and return a message for each.
+let fruitMsg = (fruit)=>{
+  if(typeof fruit === 'string'){
+    switch(fruit){
+      case 'Apple':
+        console.log("one Apple a day, keeps doctor away");
+        break;
+      case 'B anana':
+        console.log("Banana is beneficial for skin");
+        break;
+      case 'Orange':
+        console.log("Orange is rich in vitamin C");
+        break;
+      default :
+      console.log("tell me which fruit among Apple , Banana or Orange you ate");
+    }
+  }
+  else{
+    console.log("enter the fruit name")
+  }
+}
+fruitMsg("Apple");
+fruitMsg("kiwi");
+fruitMsg("Orange");
 //8.Implement an if-else statement that checks if a character is a vowel or consonant.
 //9.Write an if-else statement that checks whether a year is a leap year or not.
 //10.Write a program that takes a number as input and outputs whether the number is divisible by both 3 and 5 or not.
